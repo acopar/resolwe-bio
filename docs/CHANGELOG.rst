@@ -33,6 +33,7 @@ Changed
   problems parsing development version numbers
 - Support Slamdunk/Alleyoop processes in MultiQC
 - Enable sorting of files in ``alignment-star`` process using samtools
+- Added pyasn1 dependency for docs build
 
 
 ===================

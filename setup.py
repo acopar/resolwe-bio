@@ -59,7 +59,7 @@ setuptools.setup(
             # requirements are too open and cannot correctly install the
             # requested pre-release version of docutils.
             'docutils==0.15.2',
-            'pyasn1>=0.4.8',
+            'pyasn1==0.4.8',
         ],
         'package': ['twine', 'wheel'],
         'test': [

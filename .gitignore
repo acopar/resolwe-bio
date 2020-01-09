@@ -12,6 +12,7 @@ sftp-config.json
 !.scripts/
 !.placeholder
 !.resolwebio-filetypes.yml
+!.readthedocs.yml
 
 # Ignore backup files
 *.orig

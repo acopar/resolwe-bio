@@ -9,6 +9,7 @@ include .pylintrc
 include .resolwebio-filetypes.yml
 include tests/.env
 include tests/docker-compose.yml
+include .readthedocs.yml
 recursive-include tests *.py *.yml *.yaml *.rst
 recursive-include resolwe_bio/tests *.py
 recursive-include resolwe_bio/kb/tests *.py

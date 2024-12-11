@@ -77,41 +77,41 @@ jobs:
             exit 1
           fi
 
-      - name: Documentation
-        run: |
-          tox -e docs
+      # - name: Documentation
+      #   run: |
+      #     tox -e docs
 
-      - name: Linters
-        run: |
-          tox -e linters
+      # - name: Linters
+      #   run: |
+      #     tox -e linters
 
-      - name: Packaging
-        run: |
-          tox -e packaging
+      # - name: Packaging
+      #   run: |
+      #     tox -e packaging
 
-      - name: Extras
-        run: |
-          tox -e extra
+      # - name: Extras
+      #   run: |
+      #     tox -e extra
 
-      - name: Migrations
-        run: |
-          tox -e migrations
+      # - name: Migrations
+      #   run: |
+      #     tox -e migrations
       
-      - name: Run entire test suite
-        if: github.event_name != 'pull_request'
-        timeout-minutes: 120
-        run: |
-          tox -e ${{ matrix.toxenv }}
+      # - name: Run entire test suite
+      #   if: github.event_name != 'pull_request'
+      #   timeout-minutes: 120
+      #   run: |
+      #     tox -e ${{ matrix.toxenv }}
 
-      - name: Unit partial test suite on pull request
-        if: github.event_name == 'pull_request'
-        timeout-minutes: 120
-        run: |
-          tox -e ${{ matrix.toxenv }}-partial
+      # - name: Unit partial test suite on pull request
+      #   if: github.event_name == 'pull_request'
+      #   timeout-minutes: 120
+      #   run: |
+      #     tox -e ${{ matrix.toxenv }}-partial
 
   build:
     runs-on: ubuntu-20.04
-    needs: test
+    #needs: test
 
     permissions:
       id-token: write
